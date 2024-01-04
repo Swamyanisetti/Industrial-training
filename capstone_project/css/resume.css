@@ -1,0 +1,117 @@
+#a{
+    width: 800px;
+    height: 1100px;
+    background-color: aqua;
+    position:relative;
+}
+#a1{
+    height: 1100px;
+    width: 300px;
+    background-color: rgb(49, 119, 122);
+    float: left;
+}
+#a2{
+    height: 1100px;
+    width: 500px;
+    background-color: wheat;
+    float: right;
+}
+#b{
+    height: 250px;
+    width: 165px;
+    border: 10px solid white;
+    margin: 50px;
+}
+#img1{
+    height: 250px;
+    width: 165px;
+}
+#c{
+    height: 200px;
+    width: 300px;
+}
+#d{
+    height: 200px;
+    width: 300px;
+    position: relative;
+    bottom: 20px;
+}
+#e{
+    height: 200px;
+    width: 300px;
+    background-color: palegreen;
+}
+#f{
+    height: 130px;
+    width: 300px;
+    background-color: blueviolet;
+}
+#g{
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+}
+#p1{
+    position: relative;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+}
+#da{
+    height: 5px;
+    width: 250px;
+    background-color: yellow;
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+#db{
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+#color{
+    color: white;
+    margin-left: 50px;
+}
+#h{
+    height: 120px;
+    width: 566px;
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    right: 66px;
+}
+#ha{
+    position: relative;
+    left: 80px;
+    top: 30px;
+}
+#i{
+    height: 600px;
+    width: 500px;
+    position: relative;
+    top: 100px;
+}
+#ia{
+    height: 5px;
+    width: 400px;
+    background-color: orange;
+    position: relative;
+    top: 10px;
+    left: 45px;
+    border-radius: 10px;
+}
+#ib{
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+#ic{
+    position: relative;
+    left: 45px;
+    color: gray;
+}

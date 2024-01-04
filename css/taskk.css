@@ -1,0 +1,52 @@
+#a{
+    width: 1475px;
+    height: 60px;
+    background-color: peachpuff;
+    padding-top:15px ;
+}
+#b{
+    height: 800px;
+    width: 400px;
+    background-color: peachpuff;
+    float: left;
+    margin: 20px;
+}
+#c{
+    height: 400px;
+    width: 800px;
+    background-color: peachpuff;
+    float:left;
+    margin: 20px;
+    
+}
+#d{
+    height: 450px;
+    width: 800px;
+    background-color: peachpuff;
+    float:left;
+    margin: 20px;
+    padding-left: 10px;
+
+}
+.a{
+    height: 150px;
+    width: 150px;
+    border: 4px solid red;
+    border-radius: 75px;
+    background-color: aqua;
+    margin: 40px;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border: 2px;
+    border-radius: 75px;
+}
+#s{
+    margin: 8px;
+    height: 30px;
+    width: 600px;
+}
+#n{
+    padding-left: 20px;
+}

@@ -1,0 +1,237 @@
+#a{
+    height: 900px;
+    width: 1200px;
+    background-color: lightblue;
+    position: relative;
+}
+#b{
+    height: 200px;
+    width: 1200px;
+}
+#c{
+    height: 600px;
+    width: 1200px;
+}
+#d{
+    height: 100px;
+    width: 1200px;
+}
+#c1{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left: 120px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#c11{
+    height: 20px;
+    width: 300px;
+    background-color: magenta;
+}
+#c12{
+    height: 230px;
+    width: 300px;
+    background-color: white;
+}
+#c2{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left: 450px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#c21{
+    height: 20px;
+    width: 300px;
+    background-color: aqua;
+}
+#c22{
+    height: 230px;
+    width: 300px;
+    background-color: white;
+}
+#c3{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    float: right;
+    position: absolute;
+    left: 780px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#c31{
+    height: 20px;
+    width: 300px;
+    background-color: green;
+}
+#c32{
+    height: 230px;
+    width: 300px;
+    background-color: white;
+}
+#d1{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    float: left;
+    position:absolute;
+    left: 120px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#d11{
+    height: 20px;
+    width: 300px;
+    background-color: yellow;
+}
+#d12{
+    height: 230px;
+    width: 300px;
+    background-color: white;
+}
+#d2{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    float: left;
+    position: absolute;
+    left: 450px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#d21{
+    height: 20px;
+    width: 300px;
+    background-color: purple;
+}
+#d22{
+    height: 230px;
+    width: 300px;
+    background-color: white;
+}
+#d3{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    float: right;
+    position: absolute;
+    left: 780px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#d31{
+    height: 20px;
+    width: 300px;
+    background-color:pink;
+}
+#d32{
+    height: 230px;
+    width: 300px;
+    background-color: white;
+}
+#e1{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: magenta;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#e11{
+    height: 120px;
+    width: 300px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#e2{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: aqua;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#e3{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: green;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#e4{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color:yellow;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#e5{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: purple;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#e6{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: pink;
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#f{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+#g{
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+#h{
+    width: 200px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: magenta;
+    font-size: 20px;
+    color: white;
+}
+#ab{
+    width: 1200px;
+    height:300px ;
+}
+#abc{
+    width: 1200px;
+    height:300px ;
+}
+.a{
+    font-style: bold;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 70px;
+    left: 260px;
+    font-size: 45px;
+}

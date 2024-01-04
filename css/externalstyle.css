@@ -1,0 +1,40 @@
+.external{
+    color: blue;
+    border: 10px solid red;
+    font-size: 50px;
+    background-color: aqua;
+}
+#main{
+    height: 400px;
+    width: 400px;
+    background-color: brown;
+}
+span{
+    color:rgb(226, 122, 18);
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+input[type="text"]{
+    color: blue;
+}
+/*a[href]{
+    color: red;
+    background-color: yellow;
+}*/
+a:link{
+    color: green;
+}
+a:visited{
+    color: maroon;
+}
+a:hover{
+    font-size: 30px;
+}
+a:active{
+    color:aquamarine;
+}
