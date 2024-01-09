@@ -1,0 +1,52 @@
+#a{
+    height: 300px;
+    width: 200px;
+    background-color: orangered;
+    float: left;
+    position: absolute; 
+    z-index: 1;
+}
+#b{
+    height: 300px;
+    width: 200px;
+    background-color: green;
+    float: left;
+    position: absolute;
+    top: 60px;
+    left:60px; 
+    z-index: 2;
+}
+#c{
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+    float: left;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 3;
+}
+#d{
+    height: 300px;
+    width: 200px;
+    background-color: pink;
+    float: left;
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    z-index: 4;
+}
+#e{
+    height: 300px;
+    width: 200px;
+    background-color: yellow;
+    float: left;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    z-index: 5;
+}
+img{
+    height: 300px;
+    width: 200px;
+}

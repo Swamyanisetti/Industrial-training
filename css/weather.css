@@ -1,0 +1,182 @@
+#a{
+    height: 600px;
+    width: 1200px;
+}
+#a1{
+    height: 100px;
+    width: 1200px;
+    background-color:blue;
+}
+#a2{
+    height: 500px;
+    width: 1200px;
+    background-color: lightcyan;
+}
+#b1{
+    height: 500px;
+    width: 380px;
+    float: left;
+    margin-left: 20px;
+}
+#b2{
+    height: 500px;
+    width: 800px;
+    float: right;
+}
+#p1{
+    font-size: 30px;
+    color: white;
+    font-family: "inter";
+    position: absolute;
+    top: 13px;
+    left:510px;
+}
+#lable{
+    font-family: "inter";
+    font-size: 20px;
+}
+#input{
+    height: 50px;
+    width: 370px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#search{
+    height: 50px;
+    width: 370px;
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white; 
+    position: relative;
+    top: 20px;
+}
+#s1{
+    position: absolute;
+    bottom: 1px;
+    left: 120px;
+}
+#c1{
+    height: 2px;
+    width: 170px;
+    background-color: gray;
+    position: absolute;
+    top: 320px;
+}
+#c2{
+    height: 2px;
+    width: 170px;
+    background-color: gray;
+    position: absolute;
+    top: 320px;
+    left: 230px;
+}
+#c3{
+    color: gray;
+    position: absolute;
+    top: 295px;
+    left: 200px;
+}
+#use{
+    height: 50px;
+    width: 370px;
+    background-color: gray;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white; 
+    position: relative;
+    top: 80px;
+}
+#s2{
+    position: absolute;
+    bottom: 1px;
+    left: 120px;
+}
+#b{
+    height: 230px;
+    width: 800px;
+}
+#d{
+    height: 230px;
+    width: 730px;
+    margin-left: 40px;
+    position: relative;
+}
+#d1{
+    height: 200px;
+    width: 730px;
+    background-color: blue;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+#d2{
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin-left: 20px;
+}
+#d3{
+    height: 200px;
+    width: 180px;
+    float: right;
+}
+#d4{
+    font-family: "inter";
+    color: white;
+    font-size: 20px;
+}
+#d5{
+    color: white;
+    font-family: "inter";
+    font-size: 10px;
+}
+#d6{
+    color: white;
+    font-family: "inter";
+    margin-left: 20px;
+}
+#e1{
+    height: 180px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 10px;
+    position: absolute ;
+}
+#e2{
+    height: 180px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 10px;
+    position: absolute;
+    left: 195px;
+    bottom: 5px;
+}
+#e3{
+    height: 180px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 10px;
+    position: absolute;
+    left: 385px;
+    bottom: 5px;
+}
+#e4{
+    height: 180px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 10px;
+    position: absolute;
+    left: 580px;
+    bottom: 5px;
+}
+img{
+    height: 60px;
+    margin-left: 10px;
+ }
+ #e5{
+    color: white;
+    font-family: "inter";
+    font-size: 10px;
+    margin-left: 10px;
+}

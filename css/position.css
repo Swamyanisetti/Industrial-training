@@ -140,7 +140,7 @@
     position: sticky;
    bottom: 1px;
 }
-#left{
+/*#left{
     width: 66.6px;
     height: 100px;
     background-color: greenyellow;
@@ -149,32 +149,52 @@
    left: 0px;
    top: 0px;
    float: left;
-}
+}*/
 #scro{
     width: 250px;
     height: 300px;
     float: left;
-    background-color: yellow;
+    background-color: yellowgreen;
     margin: 0px 20px 20px 20px;
     /*overflow-x: scroll;
     overflow-y: hidden;*/
-    overflow: scroll;
+    overflow-x: scroll;
+     
+}
+#scro1{
+    width: 250px;
+    height: 300px;
+    float: right;
+    background-color: yellowgreen;
+    margin: 0px 20px 20px 20px;
+    /*overflow-x: scroll;
+    overflow-y: hidden;*/
+    overflow-x: scroll; 
     
 }
-#o{
-    width: 66.6px;
+#span1{
+    position: sticky;
+    left: 10px;
+}
+#span2{
+    position: sticky;
+    right: 10px;
+}
+
+/*#o{
+    width: 60px;
     height: 100px;
     background-color: skyblue;
     float: left;
 }
 #q{
-        width: 66.6px;
+        width: 60px;
         height: 100px;
         background-color: palegoldenrod;
         float: left;
 }
 #p{
-    width: 66.6px;
+    width: 60px;
     height: 100px;
     background-color: skyblue;
     float: right;
