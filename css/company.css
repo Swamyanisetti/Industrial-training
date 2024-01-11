@@ -1,0 +1,245 @@
+#a{
+    height: 750px;
+    width: 1200px;
+    background-color: lightpink;
+}
+#a1{
+    height: 750px;
+    width: 500px;
+    float: left;
+    position: relative;
+}
+@media screen and (max-width:200px){
+    #a2{
+        position: absolute;
+        top: 800px;
+        right: 500px;
+        background-color: pink;
+    }
+}
+#a2{
+    height: 750px;
+    width: 700px;
+    float: left;
+    position: relative;
+    
+}
+img{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    right: 100px;  
+    top: 200px;  
+
+}
+#p1{
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+}
+#p2{
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    left: 65px;
+    top: 32px;
+}
+#p3{
+    position: absolute;
+    top: 580px;
+    left: 50px;
+}
+#p4{
+    position: absolute;
+    top: 650px;
+    left: 50px;
+    font-size: 15px;
+    color: gray;
+}
+#first{
+    height: 30px;
+    width:250px ;
+    font-size: 10px;
+    position: absolute;
+    top: 150px;
+    right: 400px;
+    text-align: center;
+    border-radius: 5px;
+}
+#i1{
+    position:absolute;
+    top: 160px;
+    right: 630px;
+}
+#last{
+    height: 30px;
+    width:250px ;
+    font-size: 10px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#i2{
+    position:absolute;
+    top: 160px;
+    right: 330px;
+}
+#mail{
+    height: 30px;
+    width:550px ;
+    font-size: 10px;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#i3{
+    position:absolute;
+    top: 208px;
+    right: 630px;
+}
+#pho{
+    height: 30px;
+    width:100px ;
+    font-size: 10px;
+    position: absolute;
+    top: 250px;
+    right: 550px;
+    text-align: center;
+    border-radius: 5px;
+    float: left;
+}
+#i4{
+    position:absolute;
+    top: 258px;
+    right: 630px;
+}
+#pho1{
+    height: 30px;
+    width:450px ;
+    font-size: 10px;
+    position: absolute;
+    top: 250px;
+    right: 98px;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+}
+#job{
+    height: 30px;
+    width:550px ;
+    font-size: 10px;
+    position: absolute;
+    top: 330px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#i5{
+    position:absolute;
+    top: 338px;
+    right: 630px;
+}
+#pass1{
+    height: 30px;
+    width:250px ;
+    font-size: 10px;
+    position: absolute;
+    top: 380px;
+    right: 400px;
+    text-align: center;
+    border-radius: 5px;
+}
+#i6{
+    position:absolute;
+    top: 388px;
+    right: 630px;
+}
+#pass2{
+    height: 30px;
+    width:250px ;
+    font-size: 10px;
+    position: absolute;
+    top: 380px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#i7{
+    position:absolute;
+    top: 388px;
+    right: 330px;
+}
+#cre{
+    height: 30px;
+    width:550px ;
+    font-size: 13px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 430px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#c1{
+    height: 2px;
+    width: 210px;
+    background-color: gray;
+    position: absolute;
+    top: 500px;
+    right:120px ;
+}
+#c2{
+    height: 2px;
+    width: 210px;
+    background-color: gray;
+    position: absolute;
+    top: 500px;
+    right: 420px;
+}
+#c3{
+    color: black;
+    position: absolute;
+    top: 493px;
+    right: 360px;
+}
+#face{
+    height: 30px;
+    width:550px ;
+    font-size: 13px;
+    background-color: blueviolet;
+    color: white;
+    position: absolute;
+    top: 550px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#twit{
+    height: 30px;
+    width:550px ;
+    font-size: 13px;
+    background-color: aqua;
+    color: white;
+    position: absolute;
+    top: 600px;
+    right: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#re{
+    position: absolute;
+    top: 650px;
+    left: 200px;
+}
+#lo{
+    color: blue;
+    position: absolute;
+    top: 650px;
+    left: 338px;
+}
