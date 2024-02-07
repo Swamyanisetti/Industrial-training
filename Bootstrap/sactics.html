@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+        <style>
+            .container{
+                background-color:sandybrown;
+                position: relative;
+            }
+            #a1{
+                height: 60px;
+                position: relative;
+                background-color: white;
+                margin-left: 80px;
+                border-radius: 8px;
+            }
+            #a2{
+                height: 60px;
+                position: relative;
+                background-color: white;
+                margin-left: 80px;
+                margin-top: 20px;
+                border-radius: 8px;
+            }
+            #a3{
+                height: 60px;
+                position: relative;
+                background-color: white;
+                margin-left: 80px;
+                margin-top: 20px;
+                border-radius: 8px;
+            }
+            #b1{
+                font-size: 35px;
+                color: aqua;
+                position: absolute;
+                top: 15px;
+            }
+            #b2{
+                font-size: 35px;
+                color: orange;
+                position: absolute;
+                top: 15px;
+            }
+            #b3{
+                font-size: 35px;
+                color: green;
+                position: absolute;
+                top: 15px;
+            }
+            #b4{
+                font-size: 35px;
+                color: red;
+                position: absolute;
+                top: 15px;
+            }
+            #b5{
+                font-size: 35px;
+                color: red;
+                position: absolute;
+                top: 15px;
+                left: 130px;
+            }
+            #b6{
+                font-size: 35px;
+                color:green;
+                position: absolute;
+                top: 15px;
+                left: 130px;
+            }
+            #b7{
+                font-size: 35px;
+                color:orangered;
+                position: absolute;
+                top: 15px;
+                left: 130px;
+            }
+            #b8{
+                font-size: 35px;
+                color:skyblue;
+                position: absolute;
+                top: 15px;
+                left: 130px;
+            }
+            p{
+                font-size: 8px;
+            }
+            #c{
+                margin-left: 120px;
+            }
+            #c1{
+                margin-left: 100px;
+            }
+            .progress{
+                height: 6%;
+                position: relative;
+                bottom: 8px;
+            }
+        </style>    
+</head>
+<body>
+    <div class="container">
+        <h2>Minimal Statistics Cards</h2>
+        <h4>Statistics on minimal cards</h4>
+        <div class="row">
+            <div class="col-md-2 " id="a1">
+                <span> <i class="fa-solid fa-pen" id="b1"></i>
+                    <h5 id="c">278</h5><p id="c">New Posts</p>
+                </span>
+            </div>
+            <div class="col-md-2 " id="a1">
+                <span><i class="fa-regular fa-message" id="b2"></i>
+                <h5 id="c">156</h5><p id="c1">New Comments</p>
+            </span>
+            </div>
+            <div class="col-md-2 " id="a1">
+                <span><i class="fa-solid fa-chart-line" id="b3"></i>
+                    <h5 id="c1">64.89%</h5><p id="c1">Bounce Rate</p></span>
+            </div>
+            <div class="col-md-2 " id="a1">
+                <i class="fa-solid fa-location-dot" id="b4"></i>
+                <h5 id="c">423</h5><p id="c">Total Visits</p>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2 " id="a2">
+               <span><h5 style="color: red;">278</h5><p>New Projects</p>
+                <i class="fa-solid fa-rocket" id="b5"></i> </span>   
+            </div>
+            <div class="col-md-2 " id="a2">
+                <span><h5 style="color: green;">156</h5><p>New Clients</p>
+                <i class="fa-regular fa-user" id="b6"></i></span>
+            </div>
+            <div class="col-md-2 " id="a2">
+                <span><h5 style="color: orangered;">64.89%</h5><p>Conversion Rate</p>
+                <i class="fa-solid fa-chart-pie" id="b7"></i></span>
+            </div>
+            <div class="col-md-2 " id="a2">
+                <span><h5 style="color:skyblue;">423</h5><p>Support Tickets</p>
+                <i class="fa-brands fa-chrome" id="b8"></i></span>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2 " id="a3">
+                <span><h5 style="color: skyblue;">278</h5><p>New Posts</p>
+                <i class="fa-solid fa-book-open" id="b8"></i></span>
+                <div class="progress">
+                   <div class="progress-bar bg-info" role="progressbar" style="width: 75%;"></div>
+               </div>
+            </div>
+            <div class="col-md-2 " id="a3">
+                <span><h5 style="color: orangered;">156</h5><p>New Comments</p>
+                <i class="fa-regular fa-comments" id="b7"></i></span>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="col-md-2 " id="a3">
+                <span><h5 style="color: green;">64.89%</h5><p>Bounce Rate</p>
+                <i class="fa-solid fa-mug-hot" id="b6"></i></span>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="col-md-2 " id="a3">
+                <span><h5 style="color: red;">423</h5><p>Total Visits</p>
+                    <i class="fa-solid fa-road-barrier" id="b5"></i></span>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 49%;"></div>
+                    </div>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
