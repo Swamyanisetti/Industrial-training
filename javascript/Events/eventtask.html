@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events task</title>
+</head>
+<body>
+    <label>enter name </label>
+    <input type="text" id="in_id" onkeypress="sam(this.value)" autofocus>
+    <p id="pid"></p>
+    <p id="ppid"></p>
+    <script>
+        function sam(value){
+            const val=value.length;
+            const b=document.getElementById(in_id);
+            document.getElementById('ppid').innerText="entered characters length:"+val;
+            if(val<3){
+                document.getElementById('pid').innerText="Please,Enter value more than 3 characters...";
+                document.getElementById('pid').style.color='red';
+            }
+            else{
+                document.getElementById('pid').innerText=""; 
+            }
+            // if(value=='a'){
+            //     document.body.style.backgroundColor='green';
+            // }
+        }
+    </script>
+</body>
+</html>

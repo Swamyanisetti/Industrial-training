@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <table border="2px" width="100%">
+        <tr>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <script>
+        const a=[
+            {
+                CourseName:"Html",
+                CourseNum:781552,
+                CourseFee:550,
+                Place:'Glp'
+            },
+            {
+                CourseName:"Css",
+                CourseNum:786352,
+                CourseFee:500,
+                Place:'Glp'
+            },
+            {
+                CourseName:"JS",
+                CourseNum:521552,
+                CourseFee:380,
+                Place:'Glp'
+            },
+            {
+                CourseName:"Bootstrap",
+                CourseNum:456552,
+                CourseFee:680,
+                Place:'Glp'
+            }
+        ]
+        console.log(a);
+        const swa=document.getElementsByTagName('td');
+        console.log(swa)
+        for(let i=0;i<5;i++){
+            swa[0].innerText=a[i]['CourseName'];
+            swa[1].innerText=a[i]['CourseNum'];
+            swa[2].innerText=a[i]['CourseFee'];
+            swa[3].innerText=a[i]['Place'];
+            }   
+    </script>
+</body>
+</html>

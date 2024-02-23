@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="btn_id">count is:<span id="myspan"></span></p>
+    <button  onclick="Fun1()">increment</button>
+    <button  onclick="Fun2()">decrement</button>
+    <script>
+    const MyBtn=documen.getElementById('btn_id');
+    MyBtn.addEventListener("click",Fun1)
+    MyBtn.addEventListener("click",Fun2)
+     function Fun1(){
+          num=Number(document.getElementById('myspan').innerHTML)
+          let a=num+1;
+          document.getElementById('myspan').innerHTML=parseInt(a)   
+}
+function Fun2(){
+    num=Number(document.getElementById('myspan').innerHTML)
+          let a=num-1;
+          document.getElementById('myspan').innerHTML=parseInt(a)
+ }
+</script>
+    
+</body>
+</html>

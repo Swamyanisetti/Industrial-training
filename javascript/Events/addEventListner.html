@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventlistener</title>
+</head>
+<body>
+    <button id="bt-id">click</button>
+    <script>
+       //3.by eventlisteners
+        let btn=document.getElementById('bt-id');
+          //anonymous function
+        btn.addEventListener('click',fun);
+        function fun(){
+            document.body.style.backgroundColor='orange';
+        }
+
+        //anonymous function
+        btn.addEventListener('dblclick',function(){
+            document.body.style.backgroundColor='green';
+        })
+    </script>
+</body>
+</html>

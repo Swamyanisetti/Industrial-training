@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="" width="100%">
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td> 
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <br><br>
+    <script>
+        const swamy=document.getElementsByTagName('td')
+        console.log(swamy)
+        console.log(swamy.length)
+        const arr=[1,2,3,4,5,6,7,8,9] 
+        for(let i=9;i>0;i--) {
+            let j=0;
+            swamy[j].innerText=arr[i-1];
+            j++;
+        }
+    </script>
+</body>
+</html>

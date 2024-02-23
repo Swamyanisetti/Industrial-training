@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuction call</title>
+</head>
+<body>
+    <button id="btn_id">CLICK</button>
+    <script>
+        //2.by using properties
+        const btn=document.getElementById('btn_id');
+        btn.onclick=change;
+        // normal way of fun() calling
+        function change(){
+            document.body.style.backgroundColor='green';
+        }
+        //anonymous function() calling
+        // btn.onclick=function(){
+        //     document.body.style.backgroundColor='orange';
+        // }
+    </script>
+</body>
+</html>    

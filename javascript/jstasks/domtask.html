@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Task</title>
+</head>
+<body>
+    <ul>
+        <li style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+    </ul>
+    <script>
+        const a=document.getElementsByTagName('li');//inner html--changes total html prperties
+          a[0].innerText="Aditya Enigneering College"//inner text--only changes the text and prints code in doublecoats
+          a[1].innerText="Aditya College of Engineering And Technology"
+          a[2].innerText="Aditya College of Engineering"
+          a[0].innerHTML="<b>Aditya Enigneering College</b>"//inner text--only changes the text and prints code in doublecoats
+          a[1].innerHTML="<b>Aditya College of Engineering And Technology</b>"
+          a[2].innerHTML="<b>Aditya College of Engineering</b>"
+         /* a[0].style.fontWeight='bold'
+          a[1].style.fontWeight='bold'
+          a[2].style.fontWeight='bold'*/
+          a[0].style.background='orange'
+          a[1].style.border='5px solid red'
+          a[2].style.fontFamily='cursive'
+          console.log(a)
+          
+    </script>
+</body>
+</html>

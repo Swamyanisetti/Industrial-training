@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <table border="=2px" width="100%">
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <script>
+        const a=document.getElementsByTagName('td');
+        const arr=['swamy','bhadra','ajay','vereendra','chaitu','lohit','raju','ravi','rani']
+        const colors=['red','skyblue','green','grey','skyblue','red','green','grey','orange']
+        for(let i=0;i<a.length;i++){
+            a[i].innerText=arr[i];
+            a[i].style.backgroundColor=colors[i]
+        }
+       /* a[0].style.background='red';
+        a[1].style.background='skyblue';
+        a[2].style.background='green';
+        a[3].style.background='orange';
+        a[4].style.background='pink';
+        a[5].style.background='grey';
+        a[6].style.background='green';
+        a[7].style.background='grey';
+        a[8].style.background='orange';*/
+    </script>
+</body>
+</html>

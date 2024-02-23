@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="swa">Swamy</h1>
+    <span class="bha">Bhadra</span>
+    <span class="bha">Ajay</span>
+    <p>21249-CCN-001</p>
+    <p>21249-CCN-002</p>
+    <p>21249-CCN-003</p>
+    <h2 id="h2">By Using ID</h2>
+    <h2 id="h2">By Using ID</h2>
+    <h5 class="cs">By Using CLASS</h5>
+    <h5 class="cs">By Using CLASS</h5>
+    <span>By Using Tag</span><br>
+    <span>By Using Tag</span><br>
+    <a id="my_a">Click Me</a><br>
+    <span id="bt_id"></span>
+    <!--<img id="im" style="height: 200px;width: 200px;">-->
+    <script>
+        //entire document structure
+        //console.log(document)
+        //by using id
+        const Byid=document.getElementById('swa');
+        Byid.style.color='red';
+        Byid.style.fontSize='50px';
+       // console.log(swa)
+
+       //by using class name
+       const Cls= document.getElementsByClassName('bha');
+       Cls[0].style.color='orange'     
+       Cls[0].style.fontSize='30px'
+       Cls[1].style.color='green'
+       console.log(Cls);
+
+       //by using tag name
+       const tagnm=document.getElementsByTagName('p');
+       tagnm[0].style.color='orange';
+       tagnm[1].style.color='blue';
+       tagnm[2].style.color='green';
+
+       //query selector(#id,.class,tag)
+       //document.querySelector('p').style.backgroundColor='aqua';
+       const qs=document.querySelector('p')
+       qs.style.backgroundColor='red';   //applies to only first id/tag/cls only.
+      /* document.querySelector('#swa').style.backgroundColor='aqua';
+       document.querySelector('.bha').style.backgroundColor='aqua';*/
+
+       //queryselectorAll()
+       //by using id
+        const head=document.querySelectorAll('#h2');
+        head[0].style.backgroundColor='aqua';
+        head[1].style.backgroundColor='aqua';
+
+        //by using cls
+        const he=document.querySelectorAll('.cs');
+        he[0].style.backgroundColor='aqua';
+        he[0].style.fontSize='50px';
+        he[1].style.backgroundColor='aqua';
+        he[1].style.fontSize='50px';
+
+        //by using tag name
+        const abcd=document.querySelectorAll('span');
+        console.log(abcd);
+        abcd[2].style.fontSize='100px';
+        abcd[3].style.fontSize='100px';
+
+        //using tag,id&cls
+        const swamy=document.querySelectorAll('#h2,.cs,span');
+        console.log(swamy);
+        for(let j=0;j<swamy.length;j++){
+            swamy[j].style.backgroundColor='yellow'
+            swamy[j].style.fontWeight='bold'
+        }
+        const MyAnch=document.getElementById('my_a')
+        MyAnch.setAttribute("href","https://youtube.com")
+        MyAnch.setAttribute("target","_blank")
+       /* const im=document.getElementById('im')
+        im.setAttribute("src","../images")*/
+
+        //crete elements in JS
+        const NewDiv=document.createElement('div');
+        const Newbtn=document.createElement('button');
+        Newbtn.innerText='click';
+        Newbtn.setAttribute('id','btn_id')
+        NewDiv.innerHTML="<h2>This is div in JS</h2>";
+        NewDiv.style.cssText=`heigth=200px;  width=200px; color=red; background-color=green; border=5px solid red`;
+        const bdy=document.body;
+        console.log(bdy);
+        bdy.appendChild(Newbtn)
+        bdy.appendChild(NewDiv)
+
+        //eventListeners
+        const MyBtn=document.getElementById('btn_id');
+        MyBtn.addEventListener("mouseover",MyFun1)
+        MyBtn.addEventListener("mouseout",MyFun2)
+        MyBtn.addEventListener("click",MyFun)
+
+        function MyFun1(){
+            bdy.style.backgroundColor='orange'
+        }
+        function MyFun2(){
+            bdy.style.backgroundColor='green'
+        }
+        function MyFun3(){
+            const bt_id=document.getElementById("bt_id")
+            bt_id.innerHTML=Date();
+        }
+    </script>
+</body>
+</html>

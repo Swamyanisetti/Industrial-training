@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg-Color Task</title>
+</head>
+<body>
+    <input type="button" id="id1" onclick="change()" value="change bg">
+    <script>
+        //const bt1=document.getElementById('id1'); 
+        // function change(){
+            // var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            // document.body.style.backgroundColor="#"+randomColor
+            // const colors=['red','skyblue','green','grey','blue','yellow','violet','purple','orange']
+            // let i=0;
+            // let b=1;
+            // document.body.style.backgroundColor=colors[i];
+            // i=b+0;
+            // for(let i=0;i<colors.length;i++){
+            //     document.body.style.backgroundColor=colors[i];
+                function change(){
+                    var a= "";
+                    var b="0123456789ABCDEF";
+                    for(var i=0; i<6; i++){
+                        a += b[Math.floor(Math.random()*16)];
+                     }
+                    document.body.style.backgroundColor= "#"+a;
+                }
+    </script>
+</body>
+</html>

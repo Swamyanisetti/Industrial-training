@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEY BOARD EVENTS</title>
+</head>
+<body>
+    <p id="p_id"></p>
+    <label >Key UP</label>
+    <input id="in_id" type="text" onkeyup="fun(this.value)">
+    <label >Key DOWN</label>
+    <input id="in_id" type="text" onkeydown="fun(this.value)">
+    <label >Key PRESS</label>
+    <input id="in_id" type="text" onkeypress="fun(this.value)">
+    <script>
+        function fun(value){
+            document.getElementById('p_id').innerText=value;
+        }
+    </script>
+</body>
+</html>

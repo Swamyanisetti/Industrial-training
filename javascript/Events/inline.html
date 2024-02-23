@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline event click</title>
+</head>
+<body>
+    <button onclick="hello()">Clik me</button>
+    <button onclick="alert('hello')"> click</button>
+    <button onmouseover="hello()">mouseover</button>
+    <button onmouseleave="hello()">mouseleave</button>
+    <button onmousedown="hello()">mousedown</button>
+    <button onmouseup="hello()">mouseups</button>
+    <p id="hi"></p>
+    <script>
+        //1.inline
+        function hello(){
+            document.body.style.backgroundColor="orange";
+            document.getElementById('hi').innerText="hello,This is a INLINE Event"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+Arthematic operators:
+   arthematic operators in javascripr aloow you to perform mathematical calculations on numeric values
+   >>addition
+   >>substraction
+   >>multiplication 
+   >>division 
+   >>modulus
+   >>increment,decrement
+
+Comparision operators:
+   used to compare the values and return the boolean values 
+   ==	equal to
+   ===	equal value and equal type --also compares datatypes
+   !=	not equal ---opposite to == 
+   !==	not equal value or not equal type ---opposite to === 
+   >	greater than
+   <	less than
+   >=	greater than or equal to
+   <=	less than or equal to
+   ?	ternary operator
+
+Assignment operator:
+ =	   x = y	      x = y
++=	   x += y	   x = x + y
+-=	   x -= y      x = x - y
+*=	   x *= y	   x = x * y
+/= 	x /= y	   x = x / y
+%=	   x %= y	   x = x % y
+**=	x **= y	   x = x ** y
+
+Logical operator:
+   &&	logical and
+   ||	logical or
+   !	logical not
+  logical AND:
+   true  true --true 
+   true  false--false
+   false true--false
+   false false--false
+  logical OR:
+   true  true --true 
+   true  false--true
+   false true--true
+   false false--false
+  logical Not:
+   true--false 
+   false--true
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>

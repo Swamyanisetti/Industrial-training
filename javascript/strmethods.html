@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods in html</title>
+</head>
+<body>
+    <script>
+        function fun(str_name){
+            document.write('<b>'+str_name+'</b><br>');
+        }
+        let str='drive ready batch';
+        let str2=' mern batch';
+        let str3=' new batch';
+        //Orginal string
+        fun('Orginal string='+str);
+        //str length
+        fun('str length='+str.length);
+        //to find particular position by index
+        fun('Char AT='+str.charAt(10));
+        //concat--to add multiple strings9
+        fun('concat='+str.concat(str2));
+        fun('concat='+str.concat(str2,str3));
+        //IndexOf--to find index by value
+        fun('IndexOf='+str.indexOf('r'));
+        //lastIndexOf
+        fun('IndexOf='+str.lastIndexOf('r'));
+        //to lower case
+        let str1="DRIVE READY";
+        fun('lower case='+str1.toLowerCase())
+        //upper case
+        fun('upper case='+str.toUpperCase())
+        //trim--used to remove unwanted spaces
+        fun('trim='+str.trim())
+        //split string to array
+        console.log(str.split(""))
+        console.log(str.split(" "))
+        let newstr='Naga_chakra_Swamy';
+        fun('split string='+newstr.split("_"));
+        console.log(newstr.split("_"));
+        let newstr1='Naga&chakra&Swamy';
+        fun('split string='+newstr1.split("&"));
+        console.log(newstr1.split("&"));
+        //return boolean values
+        fun('start with='+str.startsWith('d'));
+        fun('ends with='+str.endsWith('h'));
+        //str
+    </script>
+</body>
+</html>

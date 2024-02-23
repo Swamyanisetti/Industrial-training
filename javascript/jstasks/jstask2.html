@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg-color</title>
+</head>
+<body>
+    <h1>Enter color</h1>
+    <input type="text" placeholder="enter bgcolor" id="in_id" onkeyup="sample(this.value)" autofocus>
+    <p id="demo"></p>
+    <script>
+        function sample(value){
+            const a=document.getElementById('in_id').value;
+            document.body.style.backgroundColor=a;
+            // if(value=='bhadra'){
+            //     document.body.style.backgroundColor='red';
+            // }
+        }
+    </script>
+</body>
+</html>

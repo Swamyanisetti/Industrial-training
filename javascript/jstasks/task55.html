@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellpadding="2" border="2px"  width="100%" >
+            <tr>
+                <th>course name</th>
+                <th >course number</th>
+                <th >course fee</th>
+                <th >course place</th>
+            </tr>
+            <tbody id="tableData"></tbody>
+        </table>
+        <script>
+            var Obj = [
+                {
+                    name: "Html",
+                    Number:549152,
+                   fee:550,
+                   place:'glp'
+                },
+                {
+                    name: "Css",
+                    Number:694762,
+                   fee:600,
+                   place:'glp'
+                },
+                {
+                    name: "JS",
+                    Number:593478,
+                   fee:450,
+                   place:'glp'
+                },
+                {
+                    name: "Bootstrap",
+                    Number:658789,
+                   fee:850,
+                   place:'glp'
+                },
+                {
+                    name: "JavaScript",
+                    Number:582146,
+                   fee:900,
+                   place:'glp'
+                }
+            ];
+            var c = '<tbody>'
+            for(i = 0;i < Obj.length; i++){
+                c+= '<tr>';
+                c+= '<td>' + Obj[i].name + '</td>';            //create element..........
+                c+= '<td>' + Obj[i].Number + '</td>';         //append...
+                c+= '<td>' + Obj[i].fee + '</td>';
+                c+= '<td>' + Obj[i].place+ '</td>';
+                c+= '</tr>';
+            }
+            c+='</tbody>';
+            document.getElementById('tableData').innerHTML = c;
+            </script>
+</body>
+</html>

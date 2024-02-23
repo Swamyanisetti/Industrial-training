@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dates</title>
+</head>
+<body>
+    <h2>Date</h2>
+    <script type="text/javascript">  
+        const d=new Date();
+        document.write(d+'<br>');
+        document.write('current year:'+d.getFullYear()+'<br>');
+        document.write('current month:'+(d.getMonth()+1) +'<br>');
+        document.write('current day:'+d.getDay()+'<br>');
+        document.write('current date:'+d.getDate()+'<br>');
+        document.write('current hours:'+d.getHours()+'<br>');
+        document.write('current minute:'+d.getMinutes()+'<br>');
+        document.write('current seconds:'+d.getSeconds()+'<br>');
+        document.write('current milliseconds:'+d.getMilliseconds()+'<br>');
+        const weekday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        let day=weekday[d.getDay()];
+        document.write('current day is:'+day)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="" width="100%">
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td> 
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>o</td>
+        </tr>
+    </table>
+    <br><br>
+    <script>
+        const swamy=document.getElementsByTagName('td')
+        console.log(swamy)
+        for(let i=1;i<swamy.length+1;i++){
+            swamy[i-1].innerText=i;
+        }   
+    </script>
+</body>
+</html>
