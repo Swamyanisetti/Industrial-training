@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task1</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h2 style="display: inline;">Product Details</h2>
+    <button onclick="fun1()" id="btn">+ Add Now</button>
+    <table width="100%" border="2px" id="myTable1">
+        <tr>
+            <th>Product id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+        <tbody id="myTable"></tbody>
+    </table>
+    <script>
+        const b=document.getElementById('btn');
+        b.style.cssText=`height:30px;
+                           width:100px;
+                           color:white; 
+                           background-color:skyblue;
+                           border-radius:8px;
+                           float:right;`
+        const Obj=[
+            {
+                id:456789,
+                name:'Realme mobile',
+                price:16000,
+                actions:'<button onclick="fun2()"><i id="id1" class="fa-brands fa-instagram"></i></button>',
+            },
+            {
+                id:456769,
+                name:'MI mobile',
+                price:18000,
+                actions:'<button onclick="fun2()"><i id="id3" class="fa-brands fa-instagram"></i></button>',
+            },
+            {
+                id:468789,
+                name:'Vivo mobile',
+                price:20000,
+                actions:'<button onclick="fun2()"><i id="id4" class="fa-brands fa-instagram"></i></button>',
+            },
+            {
+                actions:'<button onclick="fun2()"><i id="id5" class="fa-brands fa-instagram"></i></button>',
+            }
+        ];
+        var c = '<tbody>'
+            for(i = 0;i < Obj.length; i++){
+                c+= '<tr>';
+                c+= '<td>' + Obj[i].id + '</td>';           
+                c+= '<td>' + Obj[i].name + '</td>';        
+                c+= '<td>' + Obj[i].price + '</td>';
+                c+= '<td>' + Obj[i].actions+ '</td>';
+                c+= '</tr>';
+            }  
+            c+='</tbody>';
+            document.getElementById('myTable').innerHTML = c;
+
+        // function fun1(){
+        //     const a=document.getElementById('btn')6
+        //     const ab=obj[3].actions;
+        //     document.write(ab)
+        // }
+        function fun1() {
+            var table = document.getElementById('myTable');
+            //var row = document.getElementById("myTable");
+            var x = table.insertRow(3);
+            var e = table.rows.length-1;
+            var l = table.rows[e].cells.length;
+            //x.innerHTML = "&nbsp;";
+
+            for (var c=0, m=l; c < m; c++) {
+                table.rows[3].insertCell(c);
+                table.rows[3].cells[c].innerHTML = "&nbsp;&nbsp;";
+            }
+        }
+        
+        function fun2(){
+             document.getElementById("id1").innerHTML=' <i class="fa-solid fa-user" id="id2"></i>';
+             document.getElementById("id3").innerHTML=' <i class="fa-solid fa-user" id="id2"></i>';
+             document.getElementById("id4").innerHTML=' <i class="fa-solid fa-user" id="id2"></i>';
+             document.getElementById("id5").innerHTML=' <i class="fa-solid fa-user" id="id2"></i>';
+            //  const bd=document.getElementById('id2');
+            //  bd.style.cssText=`position: relative;
+            //                    left:-10px`
+        }
+    </script>
+</body>
+</html>

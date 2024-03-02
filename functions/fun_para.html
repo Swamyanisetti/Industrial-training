@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script>
+        //two parameters
+        function fun(a,b){
+            document.write(a+b)
+        }
+        //fun(40,50)
+
+        //fun with no parameters...
+        function add(a=0,b=0){
+            document.write(a+b)
+        }
+        add(10)
+
+        //arrow function
+        const add1=(a,b) =>{
+            console.log(a+b)
+        }
+        add1(10,20)
+ 
+        function name(c,d){
+            console.log(c+" "+d)
+        }
+        function name1(c,d){
+            console.log(c+d)
+        }
+        name1(1,'1')//11
+        name1(true,3)//4
+        name1(true,true)//2
+        name1(true,false)//1
+        name1(false,false)//0
+        name1(true,"true")//truetrue
+        name1(false,"false")//faslefalse
+        name1(true,"2")//true2
+        name1("4",false)//4false
+        function nam(a,b,c){
+            console.log(a+b+c)
+        }
+        nam(10,"10",true)//1010true
+        nam(10,true,"10")//1110
+        //settimeout
+        setTimeout(()=>{
+            document.write("Hello Everyone.....")
+        },5000)
+
+        setTimeout(demo,3000)
+        function demo(){
+            document.write("Hello Everyone.....")
+        }
+    </script>
+</body>
+</html>

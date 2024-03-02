@@ -9,20 +9,19 @@
     <button  onclick="Fun1()">increment</button>
     <button  onclick="Fun2()">decrement</button>
     <script>
-    const MyBtn=documen.getElementById('btn_id');
-    MyBtn.addEventListener("click",Fun1)
-    MyBtn.addEventListener("click",Fun2)
-     function Fun1(){
-          num=Number(document.getElementById('myspan').innerHTML)
-          let a=num+1;
-          document.getElementById('myspan').innerHTML=parseInt(a)   
-}
-function Fun2(){
-    num=Number(document.getElementById('myspan').innerHTML)
-          let a=num-1;
-          document.getElementById('myspan').innerHTML=parseInt(a)
- }
-</script>
-    
+        // const MyBtn=document.getElementById('myspan');
+        // MyBtn.addEventListener("click",Fun1)
+        // MyBtn.addEventListener("click",Fun2)
+        function Fun1(){
+            num=Number(document.getElementById('myspan').innerHTML)
+            let a=num+1;
+            document.getElementById('myspan').innerHTML=parseInt(a)   
+        } 
+        function Fun2(){
+            num=Number(document.getElementById('myspan').innerHTML)
+            let a=num-1;
+            document.getElementById('myspan').innerHTML=parseInt(a)
+        }
+    </script>      
 </body>
 </html>

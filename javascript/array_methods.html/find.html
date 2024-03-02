@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find method</title>
+</head>
+<body>
+    <script>
+        let courses=['html','css','bootstrap','js'];
+        let getCourse=courses.find((course,index)=>{
+           // return course.startsWith('j');
+           return course.endsWith('s');
+        })
+        console.log(getCourse)
+
+        let names=['ajay','swamy','bhadra','babai'];
+        let getName=names.find(function(name,index){
+           //return name.endsWith('y');
+           return name.startsWith('s');
+        })
+        console.log(getName)
+
+        let animals=['dog','cat','tiger','lion','elephant'];
+        let animal=animals.find(fun);
+        function fun(nam,ind){
+            //return nam.endsWith('r');
+            return nam.startsWith('l');
+        }
+        console.log(animal)
+    </script>
+</body>
+</html>

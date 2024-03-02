@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add/subtract by functions</title>
+</head>
+<body>
+    <h1>Add/Subtract by Functions</h1><hr>
+    <script>
+        function addFunction(a, b) {
+            return a + b;
+        }
+        function subFunction(a, b) {
+            return a - b;
+        }
+        let num1 = parseInt(prompt("Enter Value1:"));
+        let num2 = parseInt(prompt("Enter Value2:"));
+        let sum = addFunction(num1, num2);
+        let sub = subFunction(num1, num2);
+        document.write("Sum of given numbers is :"+sum+"</br>");
+        document.write("Sum of given numbers is :"+sub);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some method</title>
+</head>
+<body>
+    <script>    
+        let students=["ajayadapa@gmail.com","swamyanisetti161@gmail.com","satyasonu@gmail.com","bhadrarao@gmail.com"];
+        let email_check=students.some((email,i,arr)=>{
+            return email=="swamyanisetti161@gmail.com";
+        })
+        console.log(email_check)
+
+        let student=["ajayadapa","swamyanisetti","satya","bhadra"];
+        let name_check=student.some(function(name,i,arr){
+            return name=="satyasonu";
+        })
+        console.log(name_check)
+
+        let branches=['cme','ccn','ece','eee','mech'];
+        let b=branches.some(fun);
+        function fun(branch,i,array){
+            return branch=="ccn";
+        }
+        console.log(b)
+    </script>
+
+</body>
+</html>

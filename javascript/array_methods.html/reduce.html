@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+        let num=[56,99,6,180]
+        //anonymous function
+        let sum=num.reduce(function(acc,ele){//num.reduce(function(accumulator,ele,i,arr)
+            return acc+ele
+        },0);//value passed
+        console.log(sum)
+
+        let com=num.reduce(function(acc,ele){
+            if(acc>ele){
+                return acc;
+            }
+            else{
+                return ele;
+            }
+        },500);//passed value
+        console.log(com)
+    </script>
+</body>
+</html>

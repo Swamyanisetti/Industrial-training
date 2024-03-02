@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Add key/value Pair to Object</h1>
+    <hr>
+    <script>
+        const obj1={
+                   name:'Swamy' ,
+                   pin:102,
+                   branch:'CCN' 
+        };
+        document.write("Object Data:-</br>")
+        document.write("Name:-"+obj1.name+"</br>");
+        document.write("Pin   :-"+obj1.pin+"</br>");
+        document.write("Branch:-"+obj1.branch+"</br>");
+        document.write("Age   :-"+obj1.age+"</br></br></br>");
+        //Adding of key/value Pair
+        obj1["age"]=19;
+        obj1["college"]="Aditya College Of Engenerring And Technology";
+        obj1["village"]="Gollaprolu";
+        obj1["email"]="swamyanisetti161@gmail.com";
+        console.log(obj1)
+        document.write("After Adding key/valuepair...</br></br>");
+        document.write("Object Data:-</br>")
+        document.write("Name:-"+obj1.name+"</br>");
+        document.write("Pin   :-"+obj1.pin+"</br>");
+        document.write("Branch:-"+obj1.branch+"</br>");
+        document.write("Age   :-"+obj1.age+"</br>");
+        document.write("College:-"+obj1.college+"</br>");
+        document.write("Village:-"+obj1.village+"</br>");
+        document.write("Email:-"+obj1.email+"</br>");
+
+    </script>
+</body>
+</html>

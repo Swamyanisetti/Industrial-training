@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check undefined/null</title>
+</head>
+<body>
+    <h1>Check Wheather given number is Undefined or Null</h1>
+    <script>
+        function check(value){
+            if(value==null){
+                document.write("The Value Is NULL </br>");
+                document.write(typeof(value)+"</br>")
+            }
+            else if(value==undefined){
+                document.write("The Value Is UNDEFINED </br>");
+            }
+            else{
+                document.write("The value is not undefined and not null </br>");
+            }
+        }
+        let a=null;
+        check(a);
+        let b;
+        check(b);
+        let c='swamy';
+        check(c);
+    </script>
+</body>
+</html>

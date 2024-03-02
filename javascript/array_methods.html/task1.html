@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[
+            {
+                pin:101,
+                college:"ACET",
+            },
+            {
+                pin:102,
+                college:"AEC",
+            },
+            {
+                pin:103,
+                college:"ACET",
+            },
+            {
+                pin:104,
+                college:"ACEO",
+            },
+            {
+                pin:105,
+                college:"ACET",
+            }
+        ];
+        console.log(arr)
+        let record1=arr.filter(function(val,i,array){
+            //console.log(i)
+            // console.log(val)
+            return val.college=="ACET"
+            // if(val.college == "ACET"){
+            //     return val[i];
+            // }
+        })
+        for(let i=0;i<record1.length;i++){
+            document.write("Record "+i+"</br>")
+            document.write("Pin:"+record1[i].pin+"</br>")
+            document.write('college:'+record1[i].college+"</br></br>")
+        }
+    </script>
+</body>
+</html>

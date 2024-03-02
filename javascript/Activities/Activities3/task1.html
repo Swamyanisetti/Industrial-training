@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes in JS</title>
+</head>
+<body>
+    <h1>DataTypes in JS</h1>
+    <script>
+        //string datatype
+        let str="Swamy";
+        document.write("GivenText:-"+str+"</br>");
+        document.write("DataType :-"+typeof(str)+"</br></br>");
+        //number datatype
+        let val=16;
+        document.write("Number :-"+val+"</br>");
+        document.write("DataType:-"+typeof(val)+"</br></br>");
+        //Boolean Datatype
+        let a=true;
+        document.write("Value :-"+a+"</br>");
+        document.write("DataType:-"+typeof(a)+"</br></br>");
+        //Undefined datatype
+        let b;
+        document.write("Text  :-"+b+"</br>");
+        document.write("DataType:-"+typeof(b)+"</br></br>");
+        //bigint datatype
+        let x = BigInt("123456789012345678901234567890");
+        document.write("Number :-"+x+"</br>");
+        document.write("DataType:-"+typeof(x)+"</br></br>");
+        //object datatype
+        const person = { 
+                       firstName : "Swamy",
+                       lastName  : "Anisetti",
+                       age : 19
+                       };
+        document.write("GivenData:-</br>")
+        document.write("FirstName:-"+person.firstName+"</br>");
+        document.write("LastName:-"+person.lastName+"</br>");
+        document.write("Age   :-"+person.age+"</br>");
+        document.write("DataType:-"+typeof(person)+"</br></br>");    
+        //null datatype
+        let c=null;
+        document.write("GivenText:-"+c+"</br>");
+        document.write("DataType :-"+typeof(c)+"</br></br>"); 
+        //Array datatype
+        let arr=['swamy','ajay','bahdra','veerendra'] ;
+        document.write("GivenData:-"+arr+"</br>");
+        document.write("DataType :-"+typeof(arr)+"</br></br>");    
+    </script>
+</body>
+</html>

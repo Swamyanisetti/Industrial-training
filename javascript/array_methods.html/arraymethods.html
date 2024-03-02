@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        const arr=["swamy","Ajay","Babai"]
+        console.log(arr);
+        arr.push("Bhadra");//push
+        console.log(arr);
+        arr.pop();//pop
+        console.log(arr);
+        arr.unshift("Chaitu");//unshift
+        console.log(arr);
+        arr.shift();//shift()
+        console.log(arr);
+        const a=["Apple","Banana","Mango","Guava"];
+        const b=["Carrot","Beatroot","Radish"];
+        const c=a.concat(b);//concat
+        console.log(c);
+        const slice=c.slice(2,5);//upto n-1 values  ---slice
+        console.log(slice);
+        c.splice(3,2,"Kiwi","Papaya");//splice
+        console.log(c);
+        const index=c.indexOf("Papaya")//indexOf
+        console.log(index)
+        const st=c.sort();//sort
+        console.log(st)
+    </script>
+</body>
+</html>
