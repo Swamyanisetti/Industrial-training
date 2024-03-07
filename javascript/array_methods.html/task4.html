@@ -43,9 +43,9 @@
         let data=arr.filter((element,index)=>{
             return element.college=="ACET"
         })
-        var a='<tbody>' 
+        var a='<tbody>'
         for(i=0;i<data.length;i++){
-            a=a+='<tr>'
+            a=a+'<tr>'
             a=a+'<td>'+data[i].name +'</td>'
             a=a+'<td>'+data[i].Branch +'</td>'
             a=a+'<td>'+data[i].PIN +'</td>'
@@ -55,6 +55,5 @@
         a=a+'</tbody>';
         document.getElementById('head').innerHTML=a;
     </script>
-
 </body>
 </html>

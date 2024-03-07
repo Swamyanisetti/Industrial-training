@@ -3,42 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task-3</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <label>Enter name</label>
-    <input type="text" id="id" autofocus>
-    <button onclick="fun1()">click</button><br><br>
-    <p id="sid"></p>
+    <input type="text" maxlength="1" id="id1" placeholder="Enter first letter:">
+    <button onclick="fun()">click</button>
+    <p id="id"></p>
     <script>
-        let students=["ajay","swamy","satya","bhadrarao",'chaitu','teja'];
-        
-        function fun1(){
-        let getName=students.some(fun)
-        function fun(nam,index,i){
-            let name=document.getElementById('id').value;
-            //for(let i=0;i<students.length;i++){
-                 if(nam==name){
-                    return true;
-                 }
-                 else{
-                    return false
-                 }
-            //}
+        function fun(){
+            let a=document.getElementById('id1').value
+            let courses=['html','css','boostrap','js'];
+            let course=courses.find((name,index)=>{
+                return name.startsWith(a);
+        })
+        document.getElementById('id').innerText=course;
         }
-        console.log(getName)
-    
-        if(getName==true){
-                let pid=document.getElementById('sid');
-                document.getElementById('sid').innerText="Name Already exist.."
-                pid.style.color="green";
-        }
-        if(getName==false){
-                let pid=document.getElementById('sid');
-                document.getElementById('sid').innerText="Name Not Found"
-                pid.style.color="red";
-        }}
     </script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on/off</title>
+</head>
+<body>
+    <center><h1>Hello JavaScript</h1>
+     <!-- <button>Turn on/off the light
+        <button onclick="bulbon()"></button>
+        <button onclick="bulboff()"></button>
+    </button> -->
+    <button onclick="bulbon()" ondblclick="bulboff()">Turn on/off the light</button>
+    <img id="myImage" src="../images/bulboff.png" style="width:200px;height: 200px;">
+    <script>
+        function bulbon(){
+            document.getElementById('myImage').src='../images/bulbon.png';
+        }
+        function bulboff(){
+            document.getElementById('myImage').src='../images/bulboff.png'
+        }
+    </script>
+</body>
+</html>
