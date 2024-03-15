@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+   #par{
+    margin:0 auto;
+    width:80%;
+    overflow:hidden;
+  }
+  .swamy{
+    overflow:hidden;
+    display:none;
+  }
+#dot{  
+    margin:0 auto;
+    text-align:center;
+  }
+  .dot{
+    display:inline-block;
+    border-radius:50%;  
+    background:lightgray;
+    padding:8px;
+    margin:10px 5px;
+  }
+ .active{
+    background:black;
+  }
+    </style>
+</head>
+<body>
+    <center><h1>Sliding Image</h1></center>
+<div id="par"> 
+<div class="swamy">  
+<center> <img id="img" src="../images/sun.png"  style= "width: 300px;;">
+ </div>
+  <div class="swamy">  
+    <center><img id="img" src="../images/snow.png" style="width: 300px;">
+</div>
+<div class="swamy">  
+    <center><img id="img" src="../images/rain.png" style="width: 300px;">
+  </div>
+  <div id="dot">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+</div>
+ <script>
+var num = 0;
+ var swamy = document.querySelectorAll(".swamy");
+ var dot = document.querySelectorAll(".dot");
+ 
+ function changeSlide(){
+   if(num<0){
+     num = swamy.length-1;
+   }
+if(num>swamy.length-1){
+     num = 0;
+   }
+    for(let i=0;i<swamy.length;i++){
+     swamy[i].style.display = "none"; 
+     dot[i].classList.remove("active");
+   }
+   swamy[num].style.display= "block";
+   dot[num].classList.add("active");
+   num++;
+   setTimeout(changeSlide,1000);
+   
+  }
+ changeSlide();
+ </script>
+ </body>
+</html>

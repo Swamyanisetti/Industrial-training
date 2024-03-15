@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imag changing task</title>
+    <link rel="stylesheet" href="imgch.css">
+</head>
+<body><center>
+    
+        <h1>Sliding Image</h1>
+        <img src="../images/rain.png" id="myImg" style="height: 200px;width: 200px;"> 
+    <div id="div">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
+</center>
+    <script>
+        function fun1(){
+            if( document.getElementById('myImg').src='../images/rain.png'){
+                document.getElementById("div1").style.backgroundColor="black"
+                document.getElementById("div3").style.backgroundColor="lightgray"
+                document.getElementById("div2").style.backgroundColor="lightgray"
+            }
+            //let im=document.getElementById("myImg");
+            document.getElementById('myImg').src='../images/sun.png';
+           // document.getElementById('myImg').src='../images/snow.png';
+        }
+        function fun2(){
+            if( document.getElementById('myImg').src='../images/sun.png'){
+                document.getElementById("div2").style.backgroundColor="black"
+                document.getElementById("div1").style.backgroundColor="lightgray"
+                document.getElementById("div3").style.backgroundColor="lightgray"
+            }
+            document.getElementById('myImg').src='../images/snow.png';
+        }
+        function fun3(){
+            if( document.getElementById('myImg').src='../images/snow.png'){
+                document.getElementById("div3").style.backgroundColor="black"
+                document.getElementById("div2").style.backgroundColor="lightgray"
+                document.getElementById("div1").style.backgroundColor="lightgray"
+            }
+            document.getElementById('myImg').src='../images/rain.png';
+        }
+        // for(let i=0;i<10;i++)  {  
+        //     setTimeout(fun1,1000)
+        //     setTimeout(fun2,2000)
+        //     setTimeout(fun3,3000)
+        // }
+        setInterval(fun1,4000);
+        setInterval(fun2,6000);
+        setInterval(fun3,8000);     
+    </script>
+</body>
+</html>

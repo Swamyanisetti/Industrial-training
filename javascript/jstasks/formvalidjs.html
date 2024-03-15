@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-right: 100px;
+        }
+        #div1{
+            height: 550px;
+            width: 500px;
+            background-color: white;
+            border-radius: 55px;
+        }
+        #inid{
+            width: 80%;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #eid{
+            width: 80%;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #nid{
+            width: 80%;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #paid{
+            width: 80%;
+            height: 20px;
+            border-radius: 10px;
+        }
+        #sub{
+            width: 80%;
+            height: 30px;
+            border-radius: 10px;
+            background-color: green;
+        }
+        #label{
+            margin-right: 140px;
+        }
+        #ide{
+            margin-right: 250px;
+        }
+        /* #id1{
+            margin-right:100px;
+        }*/
+        #id2{
+            margin-right: 180px;
+        } 
+    </style>
+</head>
+<body>
+    <center><div id="div1">
+        <h1><b>Form Validation</b></h1>
+        <label id="label"><b>Name:(b/w 8-20characters)</b></label><br>
+        <input type="text" id="inid">
+        <p id="pid"></p>
+        <label  id="ide"><b>Email  :</b></label><br>
+        <input type="email" id="eid">
+        <p id="pid1"></p>
+        <label id="label"><b>Phone Number: (10 digits)</b></label><br>
+        <input type="number" id="nid">
+        <p id="pid2"></p>
+        <label id="ide"><b>Password:</b></label>
+        <input type="password" id="paid">
+        <p id="pid3"></p>
+        <label id="ide"><b>Gender:</b></label><br>
+        <input type="radio" id="gender"  name="gender" value="Male" onclick="sub(fun(this.value))">
+        <label >Male</label>
+        <input type="radio" id="gender" name="gender" value="Female" onclick="sub(fun(this.value))">
+        <label id="id2">Female</label>
+        <p id="pid4"></p>
+        <input type="button" onclick="sub()" id="sub" value="Submit">
+    </div></center>
+    <script>
+        function sub(){
+            //name
+            let inpid=document.getElementById('inid').value;
+            console.log(inpid)
+            if(inpid.length<8){
+                document.getElementById('pid').style.color="red";
+                document.getElementById('pid').innerHTML="Name should more than 8 Characters"
+            }
+            else{
+                document.getElementById('pid').innerHTML=" "
+            }
+            //email
+            let eid=document.getElementById('eid').value;
+            console.log(eid)
+            if(eid.length==0){
+                document.getElementById('pid1').style.color="red";
+                document.getElementById('pid1').innerHTML="Enter Email ";
+            }
+            for(let i=0;i<eid.length;i++){
+                if(eid[i]=="@"){
+                    document.getElementById('pid1').innerHTML=" ";
+                }
+                else{
+                    document.getElementById('pid1').style.color="red";
+                    document.getElementById('pid1').innerHTML="Email should contain '@' symbol"
+                }
+            }
+            //phone
+            let pho=document.getElementById('nid').value;
+            console.log(pho)
+            if(pho.length!=10){
+                document.getElementById('pid2').style.color="red";
+                document.getElementById('pid2').innerHTML="Number should be 10 digits"
+            }
+            else{
+                document.getElementById('pid2').innerHTML=" ";
+            }
+            //password
+            let pass=document.getElementById('paid').value;
+            console.log(pass)
+            if(pass.length<8){
+                document.getElementById('pid3').style.color="red";
+                document.getElementById('pid3').innerHTML="Password should have 8 values"
+            }
+            else{
+                document.getElementById('pid3').innerHTML=" ";
+            }
+            //gender
+            function fun(value){
+                let gen=document.getElementById('gender').value;
+                console.log(gen)
+                if(gen==null){
+                    document.getElementById('pid4').style.color="red";
+                    document.getElementById('pid4').innerHTML="Please,select Gender..."
+                }
+                else{
+                    document.getElementById('pid4').innerHTML=" ";
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

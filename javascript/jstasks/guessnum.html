@@ -9,17 +9,18 @@
             height: 300px;
             width: 300px;
             border: 5px solid black;
+            background-color: skyblue;
         }
         h1{
             text-align: center;
             color: red;
         }
         p{
-            color: green;
+            color: orangered;
             font-size: 20px;
         }
         #sub{
-            background-color: orangered;
+            background-color: green;
         }
     </style>
 </head>
@@ -38,13 +39,19 @@
             let x=Math.floor(Math.random()*11);
             console.log(x)
             let y=document.getElementById("inid").value;
-            if(x==y){
-                document.getElementById('pid').style.color="green";
-                document.getElementById('pid').innerHTML="Congratulations you found";
+            if(y.length!=0){
+                if(x==y){
+                    document.getElementById('pid').style.color="green";
+                    document.getElementById('pid').innerHTML="Congratulations you found";
+                }
+                else{
+                    document.getElementById('pid').style.color="red";
+                    document.getElementById('pid').innerHTML="Try Again";
+                }
             }
             else{
                 document.getElementById('pid').style.color="red";
-                document.getElementById('pid').innerHTML="Try Again";
+                document.getElementById('pid').innerHTML='enter a value..!';
             }
         }
     </script>
